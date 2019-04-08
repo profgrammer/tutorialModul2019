@@ -35,8 +35,15 @@ public class TutorialWorldgenerator extends BaseFacetedWorldGenerator {
     @Override
     protected WorldBuilder createWorld() {
         return new WorldBuilder(worldGeneratorPluginLibrary)
+                .setSeaLevel(0)
                 .addProvider(new SurfaceProvider())
                 .addProvider(new SeaLevelProvider(0))
-                .addRasterizer(new TutorialWorldRasterizer());
+                .addProvider(new MountainsProvider())
+                .addProvider(new HouseProvider())
+                .addProvider(new LakesProvider())
+                .addRasterizer(new TutorialWorldRasterizer())
+                .addRasterizer(new HouseRasterizer())
+                .addRasterizer(new LakesRasterizer())
+                .addPlugins();
     }
 }

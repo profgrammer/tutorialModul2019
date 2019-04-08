@@ -2,7 +2,8 @@
     "id" : "profgrammer_tutorialModule",
     "version" : "0.1.0-SNAPSHOT",
     "author" : "",
-    "displayName" : "profgrammer_tutorialModule",
+    "displayName" : "Prafful's Tutorial module",
+    "github": "https://github.com/profgrammer/tutorialModul2019",
     "description" : "",
     "dependencies" : [],
     "serverSideOnly" : false
